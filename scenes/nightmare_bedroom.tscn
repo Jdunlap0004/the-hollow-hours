@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dy3sih5vsch0a"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_54xvc"]
+size = Vector3(5, 0.1, 5)
+
+[node name="NightmareBedroom" type="Node3D" unique_id=1465697292]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1271343616]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 4)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Camera3D" unique_id=1260910084]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Camera3D/WorldEnvironment" unique_id=562764605]
+transform = Transform3D(0.8660254, -0.35355338, 0.35355338, 0, 0.70710677, 0.70710677, -0.5, -0.6123724, 0.6123724, 2, 3, 2)
+light_color = Color(0.6, 0.69803923, 1, 1)
+light_energy = 0.3
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1108848278]
+mesh = SubResource("BoxMesh_54xvc")
